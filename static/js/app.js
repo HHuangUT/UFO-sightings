@@ -30,7 +30,8 @@ function buildTable(data) {
 function updateFilters() {
 
     // 4a. Save the element that was changed as a variable.
-
+    let date = d3.select("#datetime").property("value");
+    let filteredData = tableData;
     // 4b. Save the value that was changed as a variable.
 
     // 4c. Save the id of the filter that was changed as a variable.
@@ -38,10 +39,10 @@ function updateFilters() {
   
     // 5. If a filter value was entered then add that filterId and value
     // to the filters list. Otherwise, clear that filter from the filters object.
- 
+  
   
     // 6. Call function to apply all filters and rebuild the table
-    filterTable();
+    buildTable(filteredData);
   
   }
   
@@ -56,11 +57,12 @@ function updateFilters() {
     
   
     // 10. Finally, rebuild the table using the filtered data
-    
+    buildTable(filteredData);
   }
   
   // 2. Attach an event to listen for changes to each filter
-  
+    // Attach an event to listen for the form button
+  d3.selectAll("#filter-btn").on("click", handleClick);
   
   // Build the table when the page loads
   buildTable(tableData);
