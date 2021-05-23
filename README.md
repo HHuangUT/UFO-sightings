@@ -11,6 +11,9 @@ The webpage has been built to filter up to 5 variables:
 - Shape
 
 This is done by using any combination of the entry boxes on the left, to sort the table on the right (shown below).
+         
+<img width="1414" alt="UFO_challenge_webpage" src="https://user-images.githubusercontent.com/80546200/119276282-995c5b80-bbdf-11eb-9fff-c7a46ec33948.png">
+
 
 *Note: Current data set uses acronyms to sort both Country and State*
 
@@ -18,7 +21,7 @@ This is done by using any combination of the entry boxes on the left, to sort th
 Enter text in the designated field to filter by. Examples of what to enter are provided in grey. 
 For example, the table is sorted for all Texas data by entering "tx" in the state field (shown below).
 
-
+![UFO_challenge_webpage_example](https://user-images.githubusercontent.com/80546200/119276277-91042080-bbdf-11eb-99b6-4a9b4afdc619.png)
 
 ## Summary
 ### Drawback(s)
